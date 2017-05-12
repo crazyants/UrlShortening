@@ -70,15 +70,6 @@ namespace UrlShorteningService.Controllers
         [Route("st/{key}")]
         public async Task<HttpResponseMessage> Get(string key)
         {
-            Regex urlchk = new Regex(@"((file|gopher|news|nntp|telnet|http|ftp|https|ftps|sftp)://)+(([a-zA-Z0-9\._-]+\.[a-zA-Z]{2,15})|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(/[a-zA-Z0-9\&amp;%_\./-~-]*)?", RegexOptions.Singleline | RegexOptions.IgnoreCase);
-            if (urlchk.Match(key).Length <= 0)
-            {
-                return this.Request.CreateErrorResponse(HttpStatusCode.BadRequest, "Invalid URL");
-            }
-
-            var parts = key.Split(new char[] {'/'});
-            key = parts[parts.Length - 1];
-            
             var cachedObject = this._cacheManager.GetCached<UrlModel>(key);
 
             if (cachedObject == null)
