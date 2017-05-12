@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShorteningService", "UrlShortnerService\UrlShorteningService.csproj", "{7B1CB785-9F7B-4BA0-A4ED-29B0F3438E78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortening.Repository", "UrlShortening.Repository\UrlShortening.Repository.csproj", "{348EA2B9-51FF-4983-AE8F-DF9E8068F11F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortening.Model", "UrlShortening.Model\UrlShortening.Model.csproj", "{2A1609BB-5AFD-401E-8F98-0B47B39E3A32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortening.Contract", "UrlShortening.Contract\UrlShortening.Contract.csproj", "{4B717F09-EE80-4A08-8263-70492840B17C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortening.AwsClient", "UrlShortening.Client\UrlShortening.AwsClient.csproj", "{C278F49E-A063-463F-B1C8-409BBE9B582D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{927BCD35-D178-48CE-96E8-CE8F8273C97B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortening.Cache", "UrlShortening.Cache\UrlShortening.Cache.csproj", "{77324216-AB41-41F0-8689-C4097B67E19E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortening.Repository.Test", "UrlShortening.Repository.Test\UrlShortening.Repository.Test.csproj", "{2E3DF5C2-8A38-4A03-86D7-8D463C917E47}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B1CB785-9F7B-4BA0-A4ED-29B0F3438E78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B1CB785-9F7B-4BA0-A4ED-29B0F3438E78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B1CB785-9F7B-4BA0-A4ED-29B0F3438E78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B1CB785-9F7B-4BA0-A4ED-29B0F3438E78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{348EA2B9-51FF-4983-AE8F-DF9E8068F11F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{348EA2B9-51FF-4983-AE8F-DF9E8068F11F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{348EA2B9-51FF-4983-AE8F-DF9E8068F11F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{348EA2B9-51FF-4983-AE8F-DF9E8068F11F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A1609BB-5AFD-401E-8F98-0B47B39E3A32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A1609BB-5AFD-401E-8F98-0B47B39E3A32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A1609BB-5AFD-401E-8F98-0B47B39E3A32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A1609BB-5AFD-401E-8F98-0B47B39E3A32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B717F09-EE80-4A08-8263-70492840B17C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B717F09-EE80-4A08-8263-70492840B17C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B717F09-EE80-4A08-8263-70492840B17C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B717F09-EE80-4A08-8263-70492840B17C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C278F49E-A063-463F-B1C8-409BBE9B582D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C278F49E-A063-463F-B1C8-409BBE9B582D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C278F49E-A063-463F-B1C8-409BBE9B582D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C278F49E-A063-463F-B1C8-409BBE9B582D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77324216-AB41-41F0-8689-C4097B67E19E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77324216-AB41-41F0-8689-C4097B67E19E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77324216-AB41-41F0-8689-C4097B67E19E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77324216-AB41-41F0-8689-C4097B67E19E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E3DF5C2-8A38-4A03-86D7-8D463C917E47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E3DF5C2-8A38-4A03-86D7-8D463C917E47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E3DF5C2-8A38-4A03-86D7-8D463C917E47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E3DF5C2-8A38-4A03-86D7-8D463C917E47}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2E3DF5C2-8A38-4A03-86D7-8D463C917E47} = {927BCD35-D178-48CE-96E8-CE8F8273C97B}
+	EndGlobalSection
+EndGlobal
